@@ -1,4 +1,4 @@
-# DeepAL: Deep Active Learning in Python
+# Active Learning in Continual Learning Scenario
 
 Python implementations of the following active learning algorithms:
 
@@ -20,27 +20,27 @@ Python implementations of the following active learning algorithms:
 - tqdm             4.62.3
 - ipdb             0.13.9
 
-You can also use the following command to install conda environment
+You can install the conda environment using :
 
 ```
 conda env create -f environment.yml
-
+```
+OR To install the requirements directly:
+```
 pip3 install -r req.txt
 ```
 
 ## Demo 
-
 ```
   python demo.py \
       --n_round 10 \
       --n_query 2000 \
       --n_init_labeled 10000 \
-      --dataset_name MNIST \
+      --dataset_name CIFAR100 \
       --strategy_name EntropySampling \
       --seed 1
 ```
 
-## Citing
 The base code of active learning implementation is from the below paper.
 ```
 @article{Huang2021deepal,
@@ -50,17 +50,3 @@ The base code of active learning implementation is from the below paper.
     year      = {2021},
 }
 ```
-
-## Reference
-
-[1] A Sequential Algorithm for Training Text Classifiers, SIGIR, 1994
-
-[2] Active Hidden Markov Models for Information Extraction, IDA, 2001
-
-[3] Active learning literature survey. University of Wisconsin-Madison Department of Computer Sciences, 2009
-
-[4] Deep Bayesian Active Learning with Image Data, ICML, 2017
-
-[5] Active Learning for Convolutional Neural Networks: A Core-Set Approach, ICLR, 2018
-
-[6] Adversarial Active Learning for Deep Networks: a Margin Based Approach, arXiv, 2018
